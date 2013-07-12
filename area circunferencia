@@ -1,0 +1,32 @@
+// area circunferencia.cpp : main project file.
+
+
+/****************************************************************************************
+MATERIA : INTRODUCCION A LA PROGRAMACION
+NOMBRE: CLAUDIA TORREZ ALVARADO
+FECHA: 12/07/13
+DESCRIPCION : PROGRAMA QUE CALCULA EL AREA DE UNA CIRCUNFERENCIA
+****************************************************************************************/
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "Math.h"
+#define pi 3.1416
+
+void main()
+{
+   float radio,area;
+   printf("\t calculo del area de una circunferencia \n");
+   printf("\t ==============================\n\n\n");
+   printf("ingrese radio: ");
+   scanf("%f",&radio);
+   if (radio >0)
+   {area= pi*(radio*radio);
+   printf("\nel area es:%f",area);
+   }
+   else
+   {printf("\nerror: no se acepta radio negativo");
+   }
+   getch();
+   
