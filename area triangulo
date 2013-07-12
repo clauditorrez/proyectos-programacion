@@ -1,0 +1,32 @@
+/****************************************************************************************
+MATERIA : INTRODUCCION A LA PROGRAMACION
+NOMBRE: CLAUDIA TORREZ ALVARADO
+FECHA: 12/07/13
+DESCRIPCION : PROGRAMA QUE CALCULA EL AREA DE UN TRIANGULO
+****************************************************************************************/
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{
+   float base,altura,area;
+   printf("\t calculo del area del triangulo \n");
+   printf("\t ==============================\n\n\n");
+   printf("ingrese la base: ");
+   scanf("%f",&base);
+   printf("ingrese la altura : ");
+   scanf("%f",&altura);
+   if ((base>0)&&(altura>0))
+   {
+   //calcular area
+   area=(base*altura)/2;
+   printf("\nel are es:%f",area);
+   }
+   else
+   {printf("\nerror: no se acepta base y altura negativa");
+   }
+   getch();
+   
+}
