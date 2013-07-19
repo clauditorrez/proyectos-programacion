@@ -1,0 +1,52 @@
+// 3numdescendentes.cpp : main project file.
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "stdlib.h"
+#include "conio.h"
+
+
+
+
+void main()
+{int a,b,c;
+printf("ingrese primer numero: ");
+scanf("%d",&a);
+printf("\n");
+printf("ingrese segundo numero: ");
+scanf("%d",&b);
+printf("\n");
+printf("ingrese tercer numero: ");
+scanf("%d",&c);
+printf("\n");
+if (a>b)
+  {if (a>c)
+     {if (b>c)
+       {printf("      %d,%d,%d",a,b,c);
+       }
+   else
+	   {printf("      %d,%d,%d",a,c,b);
+       }
+     }
+  else
+     {printf("       %d,%d,%d",c,a,b);
+     }
+   }
+else
+  {if (b>c)
+     {if (c>a)
+        {printf("     %d,%d,%d",b,c,a);
+        }
+	 else
+	    {printf("     %d,%d,%d",b,a,c);
+        }
+      }
+  else
+      {printf("       %d,%d,%d",c,b,a);
+      }
+   }
+printf("\n");
+printf("\n");
+system("pause");
+printf("\n");
+    
