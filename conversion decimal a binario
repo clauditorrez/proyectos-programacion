@@ -1,30 +1,38 @@
-
-/******************************************************************************************/
-
+/// calculo de la velocidad.cpp : main project file.
+/**************************************************************************************
+materia: introduccion a la programacion
+nombre: claudia torrez
+descripcion: convertir de decimal a binario
+***********************************************************************************/
 
 #include "stdafx.h"
-#include "math.h"
+#include "stdlib.h"
 #include "stdio.h"
 #include "conio.h"
+#include "math.h"
 
 void main(void)
-{int num, b, x, s;//Inicializando variables//
+{int num, b, i, s;
  float c;
- printf("\tConversion de numero decimal a binario\n");
- printf("\t==================================\n");
- x = 0; //Acumuladores//
+ printf("\t      Conversion de numero decimal a binario\n");
+ printf("\t      ========================================");
+printf("\n");
+ i = 0; 
  s = 0;
- printf("Ingrese un numero entero\n");
+  printf("\n");
+ printf("Ingrese un numero decimal: ");
  scanf_s("%d", & num);
- while(num > 0) //Inicio de conversion de decimal a binario//
- {b = (num %2); //Residuo//
-  c = powf(10,x);
-  s = s + (b*c);//Contandor//
-  x = x + 1; //Exponente//
-  num = num/2;  //Division parte entera//
+ while(num > 0) 
+ {b = (num %2);
+  c = powf(10,i);
+  s = s + (b*c);
+  i = i + 1; 
+  num = num/2;
  }
+ printf("\n");
  printf("El numero binario es: %d",s);
- _getch();
+ printf("\n");
+  printf("\n");
+ system ("pause");
 
-    
 }
