@@ -9,18 +9,13 @@
  
 
 void main()
-
-{int n,e,d;
-  float A;
+{float A,n,d;
 printf("ingrese numero tope para la serie : ");
-scanf("%d",&n);
+scanf("%f",&n);
 A=0;
-d=1;
-e=0;
 while(n>=d)
-{A= (((n-e)/d)+A);
-e=e+1;
-d=d+1;
+for(d=0;d<=n;d=d+1)
+{A= A +((n-d)/(d+1));
 }
 printf(" a es igual: %f",A);
 printf("\n");
