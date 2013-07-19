@@ -1,0 +1,28 @@
+// porcentaje numero.cpp : main project file.
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "stdlib.h"
+#include "conio.h"
+
+
+
+void main()
+{int a,b,c,suma;
+float pora,porb,porc;
+printf("\ningresar 3 numeros :     ");
+scanf_s("%d%d%d",&a,&b,&c);
+suma=a+b+c;
+pora =((a*100)/suma);
+porb =((b*100)/suma);
+porc =((c*100)/suma);
+printf("la suma es: %d",suma);
+printf("\nporcentaje de %d: %f ",a,pora);
+printf("\nporcentaje de %d: %f ",b,porb);
+printf("\nporcentaje de %d: %f ",c,porc);
+printf("\n");
+system("pause");
+
+
+   
+}
