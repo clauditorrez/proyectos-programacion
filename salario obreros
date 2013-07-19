@@ -1,0 +1,43 @@
+// SALARIOBREROS.cpp : main project file.
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "stdlib.h"
+#include "conio.h"
+
+
+
+void main()
+{int i,n,sal, horas,nhoras, suma1,suma2,saltotal;
+printf("ingrese numero de obreros: ");
+scanf("%d",&n);
+printf("\n");
+suma1=0;
+suma2=0;
+for (i=1;i<= n;i=i+1)
+{printf("ingrese horas del obrero %d: ",i);
+scanf("%d",&horas);
+  if (horas<=40)
+	{sal = (horas*20);
+	suma1=suma1+sal;
+	}
+	else
+	{nhoras = (horas -40);
+	sal= (nhoras*25)+800;
+	suma2=suma2+sal;
+	}
+	
+	printf("\n");
+	printf("salario es : %d",sal);
+	printf("\n");
+	printf("\n");
+	printf("\n");
+	
+}
+saltotal= suma1+suma2;
+printf("salario total : %d",saltotal);
+printf("\n");
+printf("\n");
+
+	system("pause");
+}
