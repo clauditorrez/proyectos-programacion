@@ -1,0 +1,30 @@
+
+/******************************************************************************************/
+
+
+#include "stdafx.h"
+#include "math.h"
+#include "stdio.h"
+#include "conio.h"
+
+void main(void)
+{int num, b, x, s;//Inicializando variables//
+ float c;
+ printf("\tConversion de numero decimal a binario\n");
+ printf("\t==================================\n");
+ x = 0; //Acumuladores//
+ s = 0;
+ printf("Ingrese un numero entero\n");
+ scanf_s("%d", & num);
+ while(num > 0) //Inicio de conversion de decimal a binario//
+ {b = (num %2); //Residuo//
+  c = powf(10,x);
+  s = s + (b*c);//Contandor//
+  x = x + 1; //Exponente//
+  num = num/2;  //Division parte entera//
+ }
+ printf("El numero binario es: %d",s);
+ _getch();
+
+    
+}
