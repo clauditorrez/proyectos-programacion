@@ -1,0 +1,28 @@
+// calculo de la velocidad.cpp : main project file.
+
+#include "stdafx.h"
+#include "stdlib.h"
+#include "stdio.h"
+#include "conio.h"
+
+
+
+void main()
+{float v,d,t;
+printf("ingrese la distancia en kilometros: ");
+scanf("%f",&d);
+printf("ingrese tiempo en horas : ");
+scanf("%f",&t);
+if ((d<0) && (t<0))
+{printf("error de datos");
+}
+else
+{v=(d/t);
+printf(" velocidad es: %f km/hora",v);
+printf("\n");
+}
+printf("\n");
+
+system("pause");
+   
+}
