@@ -1,0 +1,37 @@
+// raiz cuadrada.cpp : main project file.
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "stdlib.h"
+#include "conio.h"
+#include <Math.h>
+
+
+void main()
+{int a,b,c,raiz;
+float x, x1,x2;
+printf("dada la ecuacion ax^2+bx+c = 0  determine a,b,c: ");
+scanf("%d%d%d",&a,&b,&c);
+raiz=((b*b)-(4*c*a));
+if(a==0)
+{x =(-(c/b));
+printf(" x : %f",x);
+}
+else 
+{if (raiz>=0)
+  {x1=(-b+ (sqrt(raiz)))/(2*a);
+   x2=(-b- (sqrt(raiz)))/(2*a);
+printf("\n");
+   printf("x1: %f",x1);
+   printf("\n");
+   printf("x2: %f",x2);
+  }
+else 
+  {printf("raiz imaginaria");
+  }
+}
+printf("\n");
+system("pause");
+
+    
+}
