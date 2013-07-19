@@ -1,0 +1,25 @@
+// convertir  bolivianos a dolares.cpp : main project file.
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "stdlib.h"
+#include "conio.h"
+
+
+void main()
+{float monto, tipocambio,sus;
+printf("\ningrese monto en bolivianos: ");
+scanf_s("%f",&monto);
+printf("\ningrese tipo de cambio a dolares:  ");
+scanf_s("%f",&tipocambio);
+if((monto>0)&&(tipocambio>0))
+{sus= monto/tipocambio;
+printf("\nel monto en dolares es : %f",sus);
+}
+else
+{printf("\nmoneda o tipo de cambio menor que cero");
+}
+printf("\n");
+system("pause");
+    
+}
