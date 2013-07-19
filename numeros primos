@@ -1,0 +1,42 @@
+/ primos.cpp : main project file.
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "stdlib.h"
+#include "conio.h"
+
+void main()
+{int n,dig;
+printf("\tlos digitos primos de un numero");
+printf("\n");
+printf("\t===============================");
+printf("\n");
+printf("\n");
+printf("\n");
+printf("ingrese un numero:  ");
+scanf("%d",&n);
+while (n>0)
+{dig = n%10;
+printf("\n");
+printf("\n");
+if(dig%2==1)
+{printf("el digito %d es primo",dig);
+printf("\n");
+printf("\n");
+}
+else 
+{printf(" el digito %d no es primo", dig);
+printf("\n");
+printf("\n");
+
+}
+
+n=n/10;
+}
+printf("\n");
+printf("\n");
+
+system("pause");
+
+
+}
