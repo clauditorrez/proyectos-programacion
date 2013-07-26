@@ -1,0 +1,36 @@
+//burbuja.cpp : main project file.
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "stdlib.h"
+#include "conio.h"
+
+
+int main()
+{//cargar vector
+    int i,j,aux,vec [10];
+  for (i=0;i<10;i++)
+	{
+		printf("vec: [%d]= ",i);
+			scanf("%d",&vec[i]);
+	}
+	// clasificar el vector con burbuja
+	for (i=0;i<9;i++)
+	    for (j=i+1;j<10;j++)
+	       if (vec[i] > vec[j]);
+	          {aux=vec[j];
+			  vec[j]=vec[i];
+			  vec[i]=aux;
+			  };
+	
+	
+
+	//mostrar vector
+for (i=0;i<10;i++)
+{printf("vec [%d]=",i);
+printf("%d \n",vec[i]);
+printf("\n");
+}
+getch();
+    return 0;
+}
