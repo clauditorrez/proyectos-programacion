@@ -1,0 +1,25 @@
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{int sex;
+ float h, peso_ideal;
+ printf("\tIngrese el sexo de una persona:\n");
+ printf("\t 1.- Para hombres\n")
+ printf("\t 2.- Para mujeres\n");
+ scanf_s("%d", & sex);
+ if(sex == 1)
+ {printf("\tIngrese altura:\n");
+  scanf_s("%f", & h);
+  peso_ideal = (72.7*h)-58;
+  printf("Su peso ideal es: %f kilos",peso_ideal);
+ }
+ if(sex == 2)
+ {printf("\tIngrese altura:\n");
+  scanf_s("%f", & h);
+  peso_ideal = (62.1*h)-44.7;
+  printf("Su peso ideal es: %f kilos",peso_ideal);
+ }
+ _getch();
+}
