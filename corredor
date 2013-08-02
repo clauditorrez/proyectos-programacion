@@ -1,0 +1,48 @@
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{int ed_cor, n,i,s;
+ printf("Ingrese numero  de corredores:");
+ scanf_s("%d", & n);
+ printf("Ingrese la edad del corredor:");
+ scanf_s("%d", & ed_cor);
+ i = 0;
+ s = 0;
+ for(i = 0; i<n; i++)
+ {while(n > 0)
+ {if(ed_cor>=5 && ed_cor<=7)
+  {printf("\nCategoria: Infantil A  %d",ed_cor);
+   break;
+  }
+  if(ed_cor>=8 && ed_cor<=10)
+  {printf("\nCategoria: Infantil B  %d",ed_cor);
+   break;
+  }
+  if(ed_cor>=11 && ed_cor<=13)
+  {printf("\nCategoria: Juvenil A  %d",ed_cor);
+   break;
+  }
+  if(ed_cor>=14 && ed_cor<=17)
+  {printf("\nCategoria: Juvenil B %d",ed_cor);
+   break;
+  }
+  if(ed_cor>=18 && ed_cor<=60)
+  {printf("\nCategoria: Adulto %d",ed_cor);
+   break;
+  }
+  if(ed_cor>=60)
+  {printf("\nCategoria: Senor  %d",ed_cor);
+   break;
+  }
+  if(ed_cor> 0  &&  ed_cor<5)
+  {printf("\nNo pertenece a ninguna categoria %d",ed_cor);
+   break;
+  }
+
+
+  }
+ }
+ _getch();
+}
