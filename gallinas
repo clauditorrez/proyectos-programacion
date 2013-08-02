@@ -1,0 +1,45 @@
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#define V 1000
+void leer_vector(int*v, int n);
+float calidad(int*v, int n);
+
+int main(void)
+{int a[V], n;
+ printf("Ingrese cantidad de gallinas:");
+ scanf_s("%d", &n);
+ printf("La calidad es:%f",calidad(a,n));
+ _getch();
+ return 0;
+}
+void leer_vector(int*v, int n)
+{
+  for(int i=1; i<=n; i++)
+  {
+		printf("Ingrese la cantidad de huevos que pone la gallina[%d]",i);
+		scanf_s("%d", &v[i]);
+	}
+}
+
+float calidad(int*v, int n)
+{ int S=0,nh,i;
+  float p,a;
+  float cal;
+  float prom;
+	for(i=0; i<n; i++)
+	{
+		printf("INGRESE PESO DE GALLINA[%d]: \n",i);
+		scanf("%f",&p);
+		printf("INGRESE ALTURA DE GALLINA[%d]: \n",i);
+		scanf("%f",&a);
+		printf("INGRESE NUMERO de HUEVOS QUE PONE SU GALLINA[%d]: \n",i);
+		scanf("%d",&nh);
+		cal = (p * a) / nh;
+		S = S + cal;
+	}
+	prom = S / n;
+	return cal;
+
+
+}
