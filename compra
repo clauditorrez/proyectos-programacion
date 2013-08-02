@@ -1,0 +1,43 @@
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#define V 1000
+void leervector(int *v, int n);
+int gastomayor(int *v, int n);
+
+int main()
+{int a[V],dia;
+ printf("Ingrese los dias de un  mes:\n");
+ printf("Puede ser desde el 1 hasta el 31:\n");
+ scanf_s("%d", &dia);
+ if(dia>0 && dia<32)
+ {leervector(a,dia);
+  printf("El gasto mayor fue:%d",gastomayor(a,dia));
+ }
+ _getch();
+ return 0;
+}
+
+void leervector(int *v, int n)
+{
+  int s = 0;
+  float c;
+	for(int i=1; i<=n; i++)
+	{printf("Ingrese la cantidad de compras en el dia[%d]",i);
+	 scanf_s("%d", &v[i]);
+	 printf("Ingrese el precio de %d compras en el dia %d",v[i],i);
+	 scanf_s("%d", &c);
+	 s = s + c;
+	}
+
+}
+int gastomayor(int *v, int n)
+{int g;
+ v[0]=g;
+ for(int i=0; i<n; i++)
+  {if(v[i]>g)
+    {g = v[i];
+    }
+  }
+ return g;
+}
